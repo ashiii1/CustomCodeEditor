@@ -47,6 +47,10 @@ const styles = {
     gap: "0.5rem",
     fontWeight: "bold",
     height: "4.2rem",
+    position: "fixed", // Fix it to the viewport
+    right: "0",        // Move it to the right edge
+    paddingRight: "1rem", // Add some padding if you need space from the edge
+    top:"1rem"
   },
   stars: {
     padding: ".25rem 1rem",
@@ -77,3 +81,4 @@ const styles = {
     color: "inherit"
   }
 };
+

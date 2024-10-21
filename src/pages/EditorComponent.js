@@ -46,7 +46,7 @@ const StyledLayout = styled("div")(({ theme }) => ({
 
 const OutputLayout = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
-  height: "50vh",
+  height: "70vh",
   margin: "2rem 0",
   border: `2px solid ${theme.palette.divider}`,
   borderRadius: "1rem",
@@ -84,7 +84,7 @@ function EditorComponent() {
       alignItems: "center",
     },
     languageDropdown: {
-      marginTop: "1rem",
+      marginTop: "3rem",
       display: "flex",
       alignItems: "center",
     },
@@ -336,7 +336,7 @@ function EditorComponent() {
       <Box
         sx={[
           (theme) => ({
-            height: "auto",
+            height: "12vh",
             margin: "0.5rem",
             paddingLeft: "0.5rem",
             paddingRight: "0.5rem",
@@ -346,10 +346,11 @@ function EditorComponent() {
         ]}
       >
         <div style={styles.flex}>
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div style={{ display: "flex", alignItems: "center", margin:"1rem" }}>
             <img
               src="./images/custom-code-editor-rounded.svg"
               alt="Custom Code Editor icon"
+              
               width={32}
               style={{ marginLeft: "0.5rem" }}
             />
@@ -391,12 +392,15 @@ function EditorComponent() {
               ) : (
                 <>
                   <GoogleSignIn />
-                  <GithubSignIn/>
+                  <GithubSignIn />
                 </>
               )}
             </div>
-            <ToggleTheme />
+            {/* <ToggleTheme /> */}
             <Stars />
+          </div>
+          <div className="toggle">
+            <ToggleTheme />
           </div>
         </div>
       </Box>
